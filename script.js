@@ -1,5 +1,5 @@
-import { showMario } from "./scripts/mario.js";
-showMario();
+// import { showMario } from "./scripts/mario.js";
+// showMario();
 
 window.onload = function () {
   setInterval(displayTime, 1000);
@@ -40,11 +40,17 @@ function setAlarm() {
   }
 
   // Calculate the time difference in milliseconds
-  let timeout = alarm.getTime() - current.getTime();
+  // let timeout = alarm.getTime() - current.getTime();
 
-  setTimeout(function () {
-    alert("Alarm ringing!");
-  }, timeout);
+  // setTimeout(function () {
+  //   alert("Alarm ringing!");
+  // }, timeout);
+  function openMarioHtml() {
+    // Logic to open "mario.html" will be added here
+    window.location.href = "./assets/mario/mario.html"; // This will navigate to mario.html
+  }
+
+  openMarioHtml();
 }
 
 // Provide a message to display in the green "success" alert box
