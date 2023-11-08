@@ -1,3 +1,6 @@
+import { showMario } from "./scripts/mario.js";
+showMario();
+
 window.onload = function () {
   setInterval(displayTime, 1000);
   // Set up the alarm
