@@ -34,6 +34,7 @@
 //   }
 // });
 
+// document.addEventListener("keydown", function (event) {
 document.addEventListener("keydown", function (event) {
   let imgMario = document.querySelector("#mario img"); // Ensure you select the image inside the #mario div
   let mario = document.getElementById("mario"); // Make sure you have the mario element
@@ -54,7 +55,13 @@ document.addEventListener("keydown", function (event) {
     // plexico.pause();
     // // document.getElementById("instructions").classList.remove("hidden");
     // imgMario.src = "./assets/mario-walk.gif"; // Change the image source to the walking or standing still image.
-    location.reload();
+    // location.reload();
+    function openAlarmClock() {
+      // Logic to open "mario.html" will be added here
+      window.location.href = "../../index.html"; // This will navigate to mario.html
+    }
+
+    openAlarmClock();
   }
 });
 
@@ -77,7 +84,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // document.getElementById("plexico").pause();
     // document.getElementById("instructions").classList.remove("hidden");
     // imgMario.src = "./assets/mario-stand.gif";
-    location.reload(); // Only uncomment if you want to reload the entire page
+    location.reload();
   });
 });
 
