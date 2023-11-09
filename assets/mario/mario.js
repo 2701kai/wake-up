@@ -55,7 +55,7 @@ document.addEventListener("keydown", function (event) {
     window.location.href = "../../index.html"; // This will navigate to mario.html
   }
 
-  openAlarmClock();
+  //   openAlarmClock();
 });
 
 // Add touch support for mobile devices
