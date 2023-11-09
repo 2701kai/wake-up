@@ -1,68 +1,61 @@
-// let mario = document.getElementById("mario");
-// let imgMario = mario.querySelector("img");
-// imgMario.classList.add("hidden");
+// --------------------------------------------------------------
+// Start animation on SPACE, stop on ESCAPE:
+// --------------------------------------------------------------
 
-// // Setting the initial source of image to mario-walk.gif
-// // imgMario.src = "./mario-dance-moves.gif";
-
-// // Add touch support for mobile devices
-// let spaceButton = document.getElementById("spaceButton");
-// let escapeButton = document.getElementById("escapeButton");
-
-// // Adding the functionality for Mario to dance
-// let plexico = document.getElementById("plexico");
-// let backgroundVideo = document.getElementById("backgroundVideo");
-
+// // document.addEventListener("keydown", function (event) {
 // document.addEventListener("keydown", function (event) {
+//   let imgMario = document.querySelector("#mario img"); // select the image inside #mario div
+//   let mario = document.getElementById("mario");
+//   let backgroundVideo = document.getElementById("backgroundVideo");
+//   let plexico = document.getElementById("plexico");
 //   if (event.code === "Space") {
 //     mario.classList.add("dancing");
-//     mario.style.display = "block";
+//     imgMario.style.display = "block";
 //     backgroundVideo.style.display = "block";
-//     // backgroundVideo.classList.add("bg-video");
 //     backgroundVideo.play();
 //     plexico.play();
-//     document.getElementById("instructions").classList.add("hidden");
-//     imgMario.src = "./mario-dance-moves.gif";
+//     // document.getElementById("instructions").classList.add("hidden");
+//     // imgMario.src = "./mario-dance-moves.gif";
 //   } else if (event.code === "Escape") {
-//     // mario.classList.remove("fullHeight");
-//     mario.classList.remove("dancing");
-//     backgroundVideo.pause();
-//     backgroundVideo.style.display = "none";
-//     plexico.pause();
-//     document.getElementById("instructions").classList.remove("hidden");
-//     imgMario.src = "./assets/mario-walk.gif"; // Assuming mario-stand.gif is the standing still image.
+//     // mario.classList.remove("dancing");
+//     // backgroundVideo.pause();
+//     // backgroundVideo.style.display = "none";
+//     // plexico.pause();
+//     // // document.getElementById("instructions").classList.remove("hidden");
+//     // imgMario.src = "./assets/mario-walk.gif"; // Change the image source to the walking or standing still image.
+//     // location.reload();
+//     function openAlarmClock() {
+//       // Logic to open "mario.html" will be added here
+//       window.location.href = "../../index.html"; // This will navigate to mario.html
+//     }
+
+//     openAlarmClock();
 //   }
 // });
 
-// document.addEventListener("keydown", function (event) {
-document.addEventListener("keydown", function (event) {
-  let imgMario = document.querySelector("#mario img"); // Ensure you select the image inside the #mario div
-  let mario = document.getElementById("mario"); // Make sure you have the mario element
-  let backgroundVideo = document.getElementById("backgroundVideo"); // Assuming you have an element with this ID for the background video
-  let plexico = document.getElementById("plexico"); // Assuming you have an element with this ID for the audio
-  if (event.code === "Space") {
-    mario.classList.add("dancing");
-    imgMario.style.display = "block"; // Change the display of the img, not the mario div
-    backgroundVideo.style.display = "block";
-    backgroundVideo.play();
-    plexico.play();
-    // document.getElementById("instructions").classList.add("hidden");
-    imgMario.src = "./mario-dance-moves.gif"; // Change the image source to the dancing moves
-  } else if (event.code === "Escape") {
-    // mario.classList.remove("dancing");
-    // backgroundVideo.pause();
-    // backgroundVideo.style.display = "none";
-    // plexico.pause();
-    // // document.getElementById("instructions").classList.remove("hidden");
-    // imgMario.src = "./assets/mario-walk.gif"; // Change the image source to the walking or standing still image.
-    // location.reload();
-    function openAlarmClock() {
-      // Logic to open "mario.html" will be added here
-      window.location.href = "../../index.html"; // This will navigate to mario.html
-    }
+// --------------------------------------------------------------
+// Start animation on page loaded, stop on ESCAPE:
+// --------------------------------------------------------------
 
-    openAlarmClock();
+window.onload = function () {
+  let imgMario = document.querySelector("#mario img"); // select the image inside #mario div
+  let mario = document.getElementById("mario");
+  let backgroundVideo = document.getElementById("backgroundVideo");
+  let plexico = document.getElementById("plexico");
+
+  mario.classList.add("dancing");
+  imgMario.style.display = "block";
+  backgroundVideo.style.display = "block";
+  backgroundVideo.play();
+  plexico.play();
+};
+
+document.addEventListener("keydown", function (event) {
+  if (event.code === "Escape") {
+    window.location.href = "../../index.html"; // This will navigate to mario.html
   }
+
+  openAlarmClock();
 });
 
 // Add touch support for mobile devices
