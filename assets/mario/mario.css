@@ -213,6 +213,11 @@ iframe {
   /* margin: 0px auto; */
 }
 
+#mario img {
+  max-width: 80%;
+  max-height: 30%;
+}
+
 /* .dancing {
     position: relative;
   } */
