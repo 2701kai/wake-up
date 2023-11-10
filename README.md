@@ -13,6 +13,14 @@ Just a simple attempt at creating a web-based alarm clock in order to replace my
 - [VS Code](https://code.visualstudio.com/download)
 - [Chrome DevTools](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md)
 
+## Never-ending patient support:
+
+> in alphabetical order:
+
+- ### **[Giaco](https://github.com/giacomotolari)**
+
+- ### **[Rami](https://github.com/rami-mohamad)**
+
 ## Inspiration for this project:
 
 - Hyster 8 to. forktruck

@@ -38,7 +38,6 @@
 // --------------------------------------------------------------
 
 window.onload = function () {
-  crimemarket.is;
   let backgroundVideo = document.getElementById("backgroundVideo");
   let plexico = document.getElementById("plexico");
 
