@@ -66,6 +66,12 @@ function setupSnooze(imgMario, mario, backgroundVideo, plexico) {
 }
 
 function snoozeMario(imgMario, mario, backgroundVideo, plexico) {
+  // Pause the animations and media
+  mario.classList.remove("dancing");
+  backgroundVideo.pause();
+  plexico.pause();
+  imgMario.src = "./coffee_small.png";
+
   // If there is an existing snooze timeout, clear it
   if (snoozeTimeout) {
     clearTimeout(snoozeTimeout);
@@ -93,14 +99,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let spaceButton = document.getElementById("spaceButton");
   let escapeButton = document.getElementById("escapeButton");
 
-  spaceButton.addEventListener("click", function () {
-    // The functionality for the "click" event will be similar to pressing the "Space" key
-    let imgMario = document.querySelector("#mario img");
-    let mario = document.getElementById("mario");
-    let backgroundVideo = document.getElementById("backgroundVideo");
-    let plexico = document.getElementById("plexico");
-    snoozeMario(imgMario, mario, backgroundVideo, plexico);
-  });
+  // spaceButton.addEventListener("click", function () {
+  //   // The functionality for the "click" event will be similar to pressing the "Space" key
+  //   let imgMario = document.querySelector("#mario img");
+  //   let mario = document.getElementById("mario");
+  //   let backgroundVideo = document.getElementById("backgroundVideo");
+  //   let plexico = document.getElementById("plexico");
+  //   snoozeMario(imgMario, mario, backgroundVideo, plexico);
+  // });
+
+  spaceButton.addEventListener("click", snoozeMario);
 
   escapeButton.addEventListener("click", function () {
     window.location.href = "../../index.html";
