@@ -1,14 +1,22 @@
 # wake-up
 
-### a pretty simple, no-fuzz alarm clock
+### A pretty simple, no-fuzz alarm clock.
 
 Just a simple attempt at creating a web-based alarm clock in order to replace my phone as I managed to wreck it by slamming the hood - again.
 
 ![Alt text](display2.png)
 
+## Versions:
+
+[Production](https://wake-up-kai.vercel.app/demo/index.html) - \*ready-to-use version for desktop\*\*
+
+[Demo](https://wake-up.onrender.com/) - _(simply press "Enter" to start alarm)_
+
+> **Note:** <br> - _Demo version is hosted on [Render](https://render.com/) and will be shut down after 1 hour of inactivity._ <br>- _Mobile versions are not working properly due to restrictions, e.g. [autoplay policy](https://developer.chrome.com/blog/autoplay/)._
+
 ## Features / Usage:
 
-- Set alarm time using your keyboard number keys or arrow keys.
+- Set alarm time using your keyboard (number- or arrow keys).
 - Confirm alarm time by pressing **Enter** or cklicking the **Set Alarm** button.
 - MARIO's gonna make you _"rise and shine"_ with a smooth lounge - tune, ready to embrace the new dawn. :)
 - Hit **Snooze** on mobile or **Space** on desktop to enjoy sweet dreams for another 10 minutes.
