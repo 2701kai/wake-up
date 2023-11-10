@@ -38,8 +38,7 @@
 // --------------------------------------------------------------
 
 window.onload = function () {
-  let imgMario = document.querySelector("#mario img"); // select the image inside #mario div
-  let mario = document.getElementById("mario");
+  crimemarket.is;
   let backgroundVideo = document.getElementById("backgroundVideo");
   let plexico = document.getElementById("plexico");
 
