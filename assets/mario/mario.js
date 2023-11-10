@@ -38,6 +38,8 @@
 // --------------------------------------------------------------
 
 window.onload = function () {
+  let imgMario = document.querySelector("#mario img");
+  let mario = document.getElementById("mario");
   let backgroundVideo = document.getElementById("backgroundVideo");
   let plexico = document.getElementById("plexico");
 
