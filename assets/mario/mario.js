@@ -65,3 +65,10 @@ function setupAlarm() {
     }
   });
 }
+
+// added <div class="hint"> visibility to vanish after 10 seconds:
+const hint = document.querySelector(".hint");
+setTimeout(() => {
+  //   hint.style.visibility = "hidden"; // w.o. fade-out
+  hint.classList.add("fade-out");
+}, 3000);

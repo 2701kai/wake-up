@@ -246,6 +246,29 @@ b {
   color: #ff4a11;
 }
 
+.hint {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  z-index: 10; /* Ensure it's above other elements */
+  background-color: rgba(
+    32,
+    204,
+    9,
+    0.35
+  ); /* Optional: for better visibility */
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+}
+
+.hint.fade-out {
+  opacity: 0;
+}
+
 /* -------------------------------------------------------------- */
 /* MARIO MOBILE*/
 /* -------------------------------------------------------------- */
@@ -279,5 +302,9 @@ b {
     height: 65vh;
     /* margin-top: 1rem; */
     margin: 1rem 0 auto;
+  }
+
+  .hint {
+    display: none;
   }
 }
