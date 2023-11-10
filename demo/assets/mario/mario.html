@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" sizes="192x192" />
+    <link rel="stylesheet" href="./mario.css" />
+    <title>Rise and Shine!</title>
+  </head>
+  <body>
+    <div id="mario">
+      <img src="./mario-dance-moves.gif" alt="Mario" style="display: none" />
+    </div>
+    <!-- <div id="instructions">
+      <h2 class="clock">Dance, Mario!</h2>
+      <p>
+        <small
+          >Press <b>SPACE</b> once to immerse him in music, <b>ESCAPE</b> to
+          leave.</small
+        >
+      </p>
+    </div> -->
+
+    <!-- Audio -->
+    <audio id="plexico" loop>
+      <!-- <source src="./pandora-short.mp3" type="audio/mp3" /> -->
+      <source src="./plexico-1-shorter.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Matrix Video -->
+    <video id="backgroundVideo" loop muted style="display: none">
+      <source src="./matrix.mp4" />
+    </video>
+
+    <!-- MARIO MOBILE -->
+    <div class="button-container">
+      <button id="spaceButton" class="btn">Snooze</button>
+      <button id="escapeButton" class="btn">Alarm</button>
+      <!-- <button id="leftArrowButton" class="btn">Left</button>
+      <button id="rightArrowButton" class="btn">Right</button> -->
+    </div>
+
+    <!-- <script src="./assets/script.js"></script> -->
+    <script src="./mario.js"></script>
+  </body>
+</html>
