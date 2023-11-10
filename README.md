@@ -4,7 +4,7 @@
 
 Just a simple attempt at creating a web-based alarm clock in order to replace my phone as I managed to wreck it by slamming the hood - again.
 
-![Alt text](image.png)
+![Alt text](display2.png)
 
 ## Tools used:
 
