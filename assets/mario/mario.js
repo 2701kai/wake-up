@@ -45,11 +45,11 @@ function snoozeMario(imgMario, mario, backgroundVideo, plexico) {
   mario.classList.remove("dancing");
   backgroundVideo.pause();
   plexico.pause();
-  imgMario.src = "./coffee_small.png";
+  imgMario.src = "./coffee.png";
 
   snoozeTimeout = setTimeout(function () {
     startMario(imgMario, mario, backgroundVideo, plexico);
-  }, 6000);
+  }, 600000);
 }
 
 function setupAlarm() {

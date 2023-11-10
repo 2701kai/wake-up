@@ -10,10 +10,10 @@ body {
 
 img {
   /* display: flex;
-      flex-direction: column;
-      justify-content: center;isplay: flex;
-      flex-direction: column;
-      /* background-image: url(./assets/display2.png); */
+    flex-direction: column;
+    justify-content: center;isplay: flex;
+    flex-direction: column;
+    /* background-image: url(./assets/display2.png); */
   object-fit: contain;
   background-repeat: no-repeat;
   height: 50vh;
@@ -22,18 +22,18 @@ img {
 
 @font-face {
   font-family: "Digit";
-  src: url(./assets/fonts/Digit.woff2) format("woff2"),
-    url(./assets/fonts/Digit.woff) format("woff");
+  src: url(../assets/fonts/Digit.woff2) format("woff2"),
+    url(../assets/fonts/Digit.woff) format("woff");
 }
 
 /* #clock-container {
-      color: #ff9500;
-      display: flex;isplay: flex;
-      flex-direction: column;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    } */
+    color: #ff9500;
+    display: flex;isplay: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
 
 #clock {
   color: #ff9500;
@@ -68,7 +68,7 @@ p {
 
 .btn {
   /* display: flex;
-      flex-direction: column; */
+    flex-direction: column; */
   border: none;
   color: white;
   padding: 14px 16px;
@@ -93,6 +93,53 @@ p {
     class= "btn" 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+#alarm-time {
+  background-color: #ff9500dc;
+  /* background-color: #e5430f; */
+  color: #eeefee;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .background {
+    width: 100vw;
+  }
+
+  img {
+    width: 100vw;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding-inline: 20px;
+    line-height: 1.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  #alarm-set {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* div {
+    padding: 10px 2;
+    margin: 0 auto;
+  } */
+}
 /* ------------------------------------- */
 /* Clock Styles */
 /* ------------------------------------- */
@@ -120,11 +167,14 @@ input {
 }
 
 .success-alert {
-  padding: 10px;
+  padding: 15px 30px;
   background-color: green;
   color: white;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  line-height: 1.5em;
   position: absolute;
-  top: 25px;
+  top: 4rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;

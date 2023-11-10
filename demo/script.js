@@ -5,6 +5,16 @@ window.onload = function () {
   setInterval(displayTime, 1000);
   // Set up the alarm
   document.getElementById("set-alarm").onclick = setAlarm;
+
+  // Add keydown event listener
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      setAlarm();
+    }
+  });
+
+  // Set focus to the alarm-time input
+  document.getElementById("alarm-time").focus();
 };
 
 function displayTime() {
@@ -28,7 +38,7 @@ function setAlarm() {
     return;
   }
   // Alert the user that the alarm is set to the specified time
-  showAlert("Alarm is set to " + alarmTime);
+  showGreenAlertBox("Alarm is set to " + alarmTime);
 
   let current = new Date();
   let alarm = new Date(current.toDateString() + " " + alarmTime);
@@ -40,21 +50,22 @@ function setAlarm() {
   }
 
   // Calculate the time difference in milliseconds
-  // let timeout = alarm.getTime() - current.getTime();
+  let timeout = alarm.getTime() - current.getTime();
 
-  // setTimeout(function () {
-  //   alert("Alarm ringing!");
-  // }, timeout);
-  function openMarioHtml() {
-    // Logic to open "mario.html" will be added here
-    window.location.href = "./assets/mario/mario.html"; // This will navigate to mario.html
-  }
-
-  openMarioHtml();
+  // openMarioHtml(); on timeout = Alarm Time
+  setTimeout(openMarioHtml, timeout);
+  //Demo:
+  setTimeout(openMarioHtml, 2000);
 }
 
+function openMarioHtml() {
+  window.location.href = "./mario.html"; // This will navigate to mario.html
+}
+
+// openMarioHtml();
+
 // Provide a message to display in the green "success" alert box
-function showAlert(message) {
+function showGreenAlertBox(message) {
   let alertBox = document.getElementById("success-alert");
   alertBox.style.display = "block";
   alertBox.textContent = message;

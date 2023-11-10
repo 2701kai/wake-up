@@ -78,6 +78,7 @@ p {
   letter-spacing: 0.14em;
   display: inline-block;
   font-size: 16px;
+  font-weight: bold;
   padding-inline: 50px;
   cursor: pointer;
   border-radius: 8px;
@@ -91,6 +92,12 @@ p {
   background-color: #e5430f;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     class= "btn" 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#alarm-time {
+  background-color: #ff9500dc;
+  /* background-color: #e5430f; */
+  color: #eeefee;
 }
 
 /* mobile */
