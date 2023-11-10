@@ -304,6 +304,11 @@ b {
     margin: 1rem 0 auto;
   }
 
+  #mario img {
+    width: 80vh;
+    margin-top: 10rem;
+  }
+
   .hint {
     display: none;
   }

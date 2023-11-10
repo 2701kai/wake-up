@@ -93,6 +93,47 @@ p {
     class= "btn" 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* mobile */
+@media (max-width: 768px) {
+  .background {
+    width: 100vw;
+  }
+
+  img {
+    width: 100vw;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding-inline: 20px;
+    line-height: 1.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  #alarm-set {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* div {
+    padding: 10px 2;
+    margin: 0 auto;
+  } */
+}
 /* ------------------------------------- */
 /* Clock Styles */
 /* ------------------------------------- */
@@ -120,11 +161,14 @@ input {
 }
 
 .success-alert {
-  padding: 10px;
+  padding: 15px 30px;
   background-color: green;
   color: white;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  line-height: 1.5em;
   position: absolute;
-  top: 25px;
+  top: 4rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
