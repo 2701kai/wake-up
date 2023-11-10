@@ -12,7 +12,7 @@ Just a simple attempt at creating a web-based alarm clock in order to replace my
 
 [Demo](https://wake-up.onrender.com/) - _(simply press "Enter" to start alarm)_
 
-> **Note:** > <br>\*_Mobile versions are not working properly due to restrictions, e.g. [autoplay policy](https://developer.chrome.com/blog/autoplay/)._ > <br>_Demo version is hosted on [Render](https://render.com/) and will be shut down after 1 hour of inactivity._
+> **Note:** <br>\*_Mobile versions are not working properly due to restrictions, e.g. [autoplay policy](https://developer.chrome.com/blog/autoplay/)._ <br>_Demo version is hosted on [Render](https://render.com/) and will be shut down after 1 hour of inactivity._
 
 ## Features / Usage:
 
