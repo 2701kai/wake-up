@@ -57,7 +57,7 @@ function setAlarm() {
 }
 
 function openMarioHtml() {
-  window.location.href = "./assets/mario/mario.html"; // This will navigate to mario.html
+  window.location.href = "../assets/mario/mario.html"; // This will navigate to mario.html
 }
 
 // openMarioHtml();

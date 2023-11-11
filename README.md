@@ -8,7 +8,7 @@ Just a simple attempt at creating a web-based alarm clock in order to replace my
 
 ## Versions:
 
-[Production](https://wake-up-kai.vercel.app/demo/index.html) - _ready-to-use version for desktop_\*
+[Production](https://wake-up-kai.vercel.app/) - _ready-to-use version for desktop_\*
 
 [Demo](https://wake-up.onrender.com/) - _(simply press "Enter" to start alarm)_
 
