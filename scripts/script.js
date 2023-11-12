@@ -20,24 +20,21 @@ window.onload = function () {
 function displayTime() {
   let now = new Date();
   let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let seconds = now.getSeconds();
+  // Format the time as a string "HH:MM:SS"
+  let timeStr = [hours, minutes, seconds]
+    .map((part) => (part < 10 ? "0" + part : part))
+    .join(":");
+  // Display the time
+  document.getElementById("clock").textContent = timeStr;
+}
+
+// Set the alarm time, confirm with btn #setAlarm
+function setAlarm() {
   let alarmTime = document.getElementById("alarm-time").value;
   if (!alarmTime) {
     alert("Please set a valid alarm time.");
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
-    // Format the time as a string "HH:MM:SS"
-    let timeStr = [hours, minutes, seconds]
-      .map((part) => (part < 10 ? "0" + part : part))
-      .join(":");
-    // Display the time
-    document.getElementById("clock").textContent = timeStr;
-  }
-
-  // Set the alarm time, confirm with btn #setAlarm
-  function setAlarm() {
-    function openMarioHtml() {
-      window.location.href = "../assets/mario/mario.html"; // This will navigate to mario.html
-    }
     return;
   }
   // Alert the user that the alarm is set to the specified time
