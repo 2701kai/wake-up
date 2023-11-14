@@ -66,7 +66,7 @@ function setupAlarm() {
   });
 }
 
-// added <div class="hint"> visibility to vanish after 10 seconds:
+// added <div class="hint"> visibility to vanish after 3 seconds:
 const hint = document.querySelector(".hint");
 setTimeout(() => {
   //   hint.style.visibility = "hidden"; // w.o. fade-out

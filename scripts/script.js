@@ -3,17 +3,15 @@
 
 window.onload = function () {
   setInterval(displayTime, 1000);
-  // Set up the alarm
+
   document.getElementById("set-alarm").onclick = setAlarm;
 
-  // Add keydown event listener
   document.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
       setAlarm();
     }
   });
 
-  // Set focus to the alarm-time input
   document.getElementById("alarm-time").focus();
 };
 
@@ -22,7 +20,7 @@ function displayTime() {
   let hours = now.getHours();
   let minutes = now.getMinutes();
   let seconds = now.getSeconds();
-  // Format the time as a string "HH:MM:SS"
+
   let timeStr = [hours, minutes, seconds]
     .map((part) => (part < 10 ? "0" + part : part))
     .join(":");
