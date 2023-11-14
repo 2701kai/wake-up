@@ -69,8 +69,8 @@ function showGreenAlertBox(message) {
   alertBox.style.display = "block";
   alertBox.textContent = message;
 
-  // Hide the alert box after 2 seconds
+  // Hide the alert box after 3 seconds
   setTimeout(function () {
     alertBox.style.display = "none";
-  }, 2000);
+  }, 3000);
 }
